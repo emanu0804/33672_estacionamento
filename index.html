@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        #resultado {
+            margin-top: 20px;
+            color: green;
+        }
+        .carro-item {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Estacionamento</h1>
+    
+    <form id="carForm">
+        <label for="model">Modelo do Carro:</label>
+        <input type="text" id="model" name="model" required><br><br>
+
+        <label for="plate">Placa:</label>
+        <input type="text" id="plate" name="plate" required><br><br>
+
+        <button type="submit">Registrar Carro</button>
+    </form>
+
+    <div id="resultado"></div>
+    <div id="carrosList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>        
